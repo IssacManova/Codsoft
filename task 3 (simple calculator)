@@ -1,0 +1,60 @@
+def add():
+    print("You Have Chosen Addition Operation.")
+    num1=int(input("Enter The Number - 1: "))
+    num2=int(input("Enter The Number - 2: "))
+    res=num1+num2
+    print("The Addition Of The Two Numbers Is: ",res)
+def sub():
+    print("You Have Chosen Subtraction Operation.")
+    num1=int(input("Enter The Number - 1: "))
+    num2=int(input("Enter The Number - 2: "))
+    res=num1-num2
+    print("The Subtraction Of The Two Numbers Is: ",res)
+def mul():
+    print("You Have Chosen Multiplication Operation.")
+    num1=int(input("Enter The Number - 1: "))
+    num2=int(input("Enter The Number - 2: "))
+    res=num1*num2
+    print("The Multiplication Of The Two Numbers Is: ",res)
+def div():
+    print("You Have Chosen Division Operation.")
+    num1=int(input("Enter The Number - 1: "))
+    num2=int(input("Enter The Number - 2: "))
+    res=num1/num2
+    print("The Quotioent Is: ",res)
+def mod():
+    print("You Have Chosen Modulus Operation.")
+    num1=int(input("Enter The Number - 1: "))
+    num2=int(input("Enter The Number - 2: "))
+    res=num1%num2
+    print("The Remainder Is: ",res)
+def quit():
+    print("End Of The Program...............")
+
+if __name__=="__main__":
+    while True:
+        print("\n\nSelect One Of The Operator")
+        print("**************************")
+        print("1. Addition       : +")
+        print("2. Subtraction    : -")
+        print("3. Multiplication : *")
+        print("4. Division       : /")
+        print("5. Modulus        : %")
+        print("6. Quit")
+        opt=input("Enter Any Of The Following Operators: ")
+
+        if(opt=="+"):
+            add()
+        elif(opt=="-"):
+            sub()
+        elif(opt=="*"):
+            mul()
+        elif(opt=="/"):
+            div()
+        elif(opt=="%"):
+            mod()
+        elif(opt=="6"):
+            quit()
+            break
+        else:
+            print("Invalid Input.Please Enter A Valid Input.")
